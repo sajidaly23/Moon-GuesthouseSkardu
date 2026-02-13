@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 import RoomCard from '../components/RoomCard';
 
@@ -33,11 +33,6 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
-          {/* Using img for background is acceptable if layout='fill' causes issues, but let's try to be compliant or ignore if needed. 
-              Actually, for background image, standard img with object-cover is often easier, but Next.js prefers Image.
-              I'll use a simple div with background image via style or class if I had the asset, but here I'll just suppress the warning or use Image.
-              Let's use Image.
-          */}
           <Image
             src="/room-1.jpg"
             alt="Moon Guest House Hero"
@@ -47,9 +42,9 @@ export default function Home() {
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Welcome to Moon Guest House</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Welcome to Moon Guest House Skardu</h1>
           <p className="text-xl md:text-2xl mb-8">
-            Experience comfort, luxury, and serenity.
+            where comforts, meets affordability.
           </p>
           <Link href="/rooms" className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
             Book Your Stay
@@ -97,3 +92,4 @@ export default function Home() {
     </div>
   );
 }
+

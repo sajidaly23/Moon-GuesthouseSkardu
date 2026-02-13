@@ -8,8 +8,8 @@ import Link from 'next/link';
 const roomsData = [
     {
         _id: '1',
-        name: 'Deluxe Mountain View',
-        description: 'Spacious room with a stunning view of the mountains. Includes King size bed, private balcony, and jacuzzi. Perfect for couples looking for a romantic getaway.',
+        name: ' couple room',
+        description: 'Spacious room with a stunning view of the mountains. Includes King size bed.',
         price: 250,
         images: ['/room-1.jpg', '/bathroom.jpg', '/bathroom-2.jpg'],
         amenities: ['WiFi', 'AC', 'TV', 'Breakfast', 'Jacuzzi', 'Mountain View'],
@@ -17,8 +17,8 @@ const roomsData = [
     },
     {
         _id: '2',
-        name: 'Standard Garden View',
-        description: 'Cozy room overlooking the lush garden. Perfect for a relaxing getaway. Enjoy the peace and quiet of nature.',
+        name: 'Standard room',
+        description: 'Cozy room overlooking the mountains. Perfect for a relaxing getaway.',
         price: 150,
         images: ['/room-2.jpg', '/bathroom-3.jpg'],
         amenities: ['WiFi', 'AC', 'TV', 'Garden View'],
@@ -26,7 +26,7 @@ const roomsData = [
     },
     {
         _id: '3',
-        name: 'Family Suite',
+        name: 'couple room',
         description: 'Large suite suitable for families. Includes two bedrooms, a living area, and kitchenette. Plenty of space for everyone.',
         price: 350,
         images: ['/room-3.jpg', '/room-5.jpg'],
@@ -134,3 +134,4 @@ export default function RoomDetail() {
         </div>
     );
 }
+

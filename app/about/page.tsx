@@ -7,7 +7,7 @@ export default function About() {
                 <div className="text-center mb-16">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">About Us</h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Welcome to Moon Guesthouse, where comfort meets hospitality.
+                        Welcome to Moon Guest House Skardu, where comfort meets affordability.
                     </p>
                 </div>
 

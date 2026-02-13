@@ -35,7 +35,7 @@ export default function Contact() {
                                 <FaMapMarkerAlt className="text-blue-600 mt-1 mr-4" size={24} />
                                 <div>
                                     <h3 className="font-semibold text-gray-800">Address</h3>
-                                    <p className="text-gray-600">Banazir choke skardu</p>
+                                    <p className="text-gray-600">Benazir chowk skardu</p>
                                 </div>
                             </div>
                             <div className="flex items-center">
@@ -49,7 +49,7 @@ export default function Contact() {
                                 <FaEnvelope className="text-blue-600 mr-4" size={24} />
                                 <div>
                                     <h3 className="font-semibold text-gray-800">Email</h3>
-                                    <p className="text-gray-600">info@moonguesthouse.com</p>
+                                    <p className="text-gray-600">moonguesthouseskardu@gmail.com</p>
                                 </div>
                             </div>
                         </div>
