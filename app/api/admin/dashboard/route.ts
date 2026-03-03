@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import dbConnect from '@/lib/mongodb.js';
-import Booking from '@/models/Booking.js';
-import Room from '@/models/Room.js';
+import dbConnect from '@/lib/mongodb';
+import Booking from '@/models/Booking';
+import Room from '@/models/Room';
 
 export const dynamic = 'force-dynamic';
 
