@@ -5,7 +5,7 @@ import Room from '@/models/Room';
 
 export const dynamic = 'force-dynamic';
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
         await dbConnect();
 
@@ -22,7 +22,7 @@ export async function GET() {
         const activeBookings = await Booking.countDocuments({ status: 'confirmed' });
         const occupancyRate = totalRooms > 0 ? (activeBookings / totalRooms) * 100 : 0;
 
-        return NextResponse.json({
+        return Response.json({
             success: true,
             data: {
                 totalRooms,
@@ -32,6 +32,7 @@ export async function GET() {
             },
         });
     } catch (error: any) {
-        return NextResponse.json({ success: false, error: error.message }, { status: 400 });
+        console.error('Dashboard API Error:', error);
+        return Response.json({ success: false, error: error.message }, { status: 400 });
     }
 }
