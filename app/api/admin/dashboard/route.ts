@@ -32,6 +32,7 @@ export async function GET(request: Request) {
             },
         });
     } catch (error: any) {
+        console.error('Dashboard API Error:', error);
         return Response.json({ success: false, error: error.message }, { status: 400 });
     }
 }
